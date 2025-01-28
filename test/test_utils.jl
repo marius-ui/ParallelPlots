@@ -4,7 +4,7 @@ using CairoMakie: LineSegments, save, Lines
 using DrWatson
 # Generate person data as a dictionary
 function create_person_df(n_samples = 10)
-    Random.seed!(10)
+    seed!(10)
     data = @dict(
         height = rand(150:180, n_samples),
         weight = rand(40:130, n_samples),
@@ -17,7 +17,7 @@ end
 
 # Generate car data as a dictionary
 function create_car_df(n_samples = 10)
-    Random.seed!(10)
+    seed!(10)
     data = @dict(
         horsepower = rand(60:300, n_samples),
         weight = rand(90:2000, n_samples),
