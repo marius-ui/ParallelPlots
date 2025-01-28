@@ -1,4 +1,6 @@
-using ParallelPlots, Test, DataFrames
+using ParallelPlots
+using Test
+using DataFrames
 
 @testset "ParallelPlots Tests" begin
     include("test_utils.jl")
