@@ -25,7 +25,13 @@ $x' = x - a, \quad y' = y - b$
 To compare variables on different scales, data is normalized to $[0, 1]$:  
 $x_{\text{norm}} = \frac{x - \min(x)}{\max(x) - \min(x)}$
 
-
+### 3. **Rotation (for Orthogonal Systems)**  
+For rotated axes by angle $\alpha$ in a Cartesian system:  
+$$
+x' &= x \cos \alpha + y \sin \alpha \\
+y' &= -x \sin \alpha + y \cos \alpha
+\end{align*}
+$$
 
 These principles underpin how parallel coordinates handle scaling and alignment of axes.
 
