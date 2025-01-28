@@ -1,7 +1,7 @@
 using Random: seed!, rand
 using DataFrames: DataFrame
 using CairoMakie: LineSegments, save, Lines
-
+using DrWatson
 # Generate person data as a dictionary
 function create_person_df(n_samples = 10)
     Random.seed!(10)
