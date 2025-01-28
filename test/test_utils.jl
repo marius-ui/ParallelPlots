@@ -1,50 +1,42 @@
-# test_utils.jl
-const TEST_CASES = Dict(
-    :argument_errors => [
-        Dict(
-            :name => "missing_values",
-            :df => DataFrame(Name=["Alice", "Bob", "Charlie"], Age=[25, 30, missing], City=["Berlin", "Munich", "Hamburg"]),
-            :expected_error => ArgumentError
-        ),
-        Dict(
-            :name => "one_column",
-            :df => DataFrame(Name=["Alice"]),
-            :expected_error => ArgumentError
-        )
-    ],
-    
-    :color_features => [
-        Dict(
-            :name => "valid_color_feature",
-            :df => create_person_df(),
-            :params => Dict(:color_feature => "weight", :colormap => :thermal),
-            :expected => nothing
-        ),
-        Dict(
-            :name => "invalid_color_feature",
-            :df => create_person_df(),
-            :params => Dict(:color_feature => "invalid_column"),
-            :expected_error => AssertionError
-        )
-    ],
-    
-    :feature_selection => [
-        Dict(
-            :name => "valid_selection",
-            :df => create_person_df(),
-            :params => Dict(:feature_selection => ["height", "age", "income"]),
-            :expected => nothing
-        )
-    ]
-)
-# test_utils.jl
-function save_test_output(fig, testname)
-    mkpath("test_output")
-    save("test_output/$testname.png", fig)
+using Random
+using DataFrames
+using CairoMakie
+using DrWatson
+
+# Generate person data as a dictionary
+function create_person_dict(n_samples = 10)
+    Random.seed!(10)
+    data = @dict(
+        height = rand(150:180, n_samples),
+        weight = rand(40:130, n_samples),
+        age = rand(0:70, n_samples), # Random numbers between 0 and 70
+        income = rand(450:5000, n_samples),
+        education_years = rand(0:25, n_samples) # Random numbers between 0 and 25
+    )
+    return DataFrame(data)
 end
 
-function visualize_test_case(case)
-    fig = parallelplot(case[:df]; get(case, :params, Dict())...)
-    save_test_output(fig, case[:name])
-    return fig
+# Generate car data as a dictionary
+function create_car_dict(n_samples = 10)
+    Random.seed!(10)
+    data = @dict(
+        horsepower = rand(60:300, n_samples),
+        weight = rand(90:2000, n_samples),
+        age = rand(0:70, n_samples)
+    )
+    return DataFrame(data)
+end
+
+# Count line segments in a plot
+function count_line_segments(fig)
+    return length(filter(
+        x -> (typeof(x) <: LineSegments),
+        fig.scene.plots))
+end
+
+# Count lines except black ones
+function count_lines(fig)
+    return length(filter(
+        x -> typeof(x) <: Lines && !(x[:color][] == :black),
+        fig.scene.plots))
 end

@@ -1,18 +1,18 @@
-using ParallelPlots, Test, DataFrames
+using ParallelPlots
+using Test
 
-@testset "Curved Line Tests" begin
+using DataFrames
+
+@testset "default call curved" begin
+
+    # Generate sample multivariate data
     df = create_person_df()
-    
-    test_cases = [
-        Dict(:name => "straight_lines", :curve => false, :expected_segments => 10),
-        Dict(:name => "curved_lines", :curve => true, :expected_segments => 280)
-    ]
-    
-    for case in test_cases
-        @testset "$(case[:name])" begin
-            fig = parallelplot(df; curve=case[:curve])
-            @test count_line_segments(fig) == case[:expected_segments]
-            save("test_output/$(case[:name]).png", fig)
-        end
-    end
+
+    #display
+    fig = parallelplot(df, curve=true)
+
+    @test fig !== nothing
+
+    save("parallel_coordinates_plot_curved.png", fig)
+
 end

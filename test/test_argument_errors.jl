@@ -1,14 +1,28 @@
-using ParallelPlots, Test, DataFrames
+using ParallelPlots
+using Test
 
-@testset "Argument Error Tests" begin
-    cases = TEST_CASES[:argument_errors]
-    for case in cases
-        @testset "$(case[:name])" begin
-            if haskey(case, :expected_error)
-                @test_throws case[:expected_error] parallelplot(case[:df])
-            else
-                @test parallelplot(case[:df]) !== nothing
-            end
-        end
+using DataFrames
+
+@testset "ArgumentError Tests" begin
+    df_missing = DataFrame(Name=["Alice", "Bob", "Charlie"],
+        Age=[25, 30, missing],
+        City=["Berlin", "Munich", "Hamburg"])
+    df_one_column = DataFrame(Name=["Alice", "Bob", "Charlie"])
+    df_one_line = DataFrame(Name=["Alice"],
+        Age=[25,],
+        City=["Berlin"])
+    # Test 1: Function throws ArgumentError for invalid input
+    @test_throws ArgumentError begin
+        parallelplot(DataFrame(nothing))
+    end
+
+    @test_throws ArgumentError begin
+        parallelplot(df_missing)
+    end
+    @test_throws ArgumentError begin
+        parallelplot(df_one_column)
+    end
+    @test_throws ArgumentError begin
+        parallelplot(df_one_line)
     end
 end
