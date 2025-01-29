@@ -7,11 +7,7 @@ makedocs(;
     modules=[ParallelPlots],
     authors="Moritz Schelten <moritz155@win.tu-berlin.de>",
     sitename="ParallelPlots.jl",
-    format=Documenter.HTML(;
-        canonical="https://github.com/marius-ui/ParallelPlots/blob/New/src/ParallelPlots.jl",
-        edit_link="New",
-        assets=String[],
-    ),
+    format=Documenter.HTML(),
     pages=[
         "Home" => "index.md",
         "Getting Started" => "getting_started.md",
@@ -22,6 +18,8 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="marius-ui/ParallelPlots/blob/New/src/ParallelPlots.jl",
-    devbranch="New",
+    repo="github.com/moritz155/ParallelPlots.git",
+    devbranch="main",
+    devurl = "dev",
+    versions = ["stable" => "v^", "v#.#", "dev" => "dev"]
 )
