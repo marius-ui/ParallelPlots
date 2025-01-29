@@ -1,6 +1,6 @@
 # ParallelPlots
 
-[Documentation (Local)](file:///C:/Users/tchia/Desktop/ParallelPlots-main/ParallelPlots/docs/build/index.html)
+
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://marius-ui.github.io/ParallelPlots//stable/)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://marius-ui.github.io/ParallelPlots/dev/)
 [![Build Status](https://github.com/moritz155/ParallelPlots/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/moritz155/ParallelPlots/actions/workflows/CI.yml?query=branch%3Amain)
