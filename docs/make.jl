@@ -3,7 +3,11 @@ using ParallelPlots
 
 makedocs(
     sitename = "ParallelPlots",
-    format = Documenter.HTML(),
+    format=Documenter.HTML(;
+        canonical="https://muehlefeldt.github.io/AJD.jl",
+        edit_link="master",
+        assets=String[],
+    ),
     pages = [
         "Home" => "index.md",
         "Getting Started" => "getting_started.md",
