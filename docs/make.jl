@@ -8,7 +8,7 @@ makedocs(;
     authors="Moritz Schelten <moritz155@win.tu-berlin.de>",
     sitename="ParallelPlots.jl",
     format=Documenter.HTML(;
-        canonical="https://moritz155.github.io/ParallelPlots.jl",
+        canonical="https://github.com/marius-ui/ParallelPlots/blob/New/src/ParallelPlots.jl",
         edit_link="New",
         assets=String[],
     ),
@@ -22,6 +22,6 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/moritz155/ParallelPlots.jl",
+    repo="marius-ui/ParallelPlots/blob/New/src/ParallelPlots.jl",
     devbranch="New",
 )
