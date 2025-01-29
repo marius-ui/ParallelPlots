@@ -1,11 +1,13 @@
 using Documenter
 using ParallelPlots
 
+DocMeta.setdocmeta!(ParallelPlots, :DocTestSetup, :(using ParallelPlots); recursive=true)
+
 makedocs(
     sitename = "ParallelPlots",
     format=Documenter.HTML(;
-        canonical="https://muehlefeldt.github.io/AJD.jl",
-        edit_link="master",
+        canonical="https://marius-ui.github.io/ParallelPlots.jl",
+        edit_link="",
         assets=String[],
     ),
     pages = [
@@ -18,8 +20,8 @@ makedocs(
 )
 
 deploydocs(
-    repo = "github.com/moritz155/ParallelPlots.git",
-    devbranch = "main",
+    repo = "https://github.com/marius-ui/ParallelPlots",
+    devbranch = "New",
     devurl = "dev",
     versions = ["stable" => "v^", "v#.#", "dev" => "dev"]
 )
