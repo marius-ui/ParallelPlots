@@ -9,7 +9,7 @@ makedocs(;
     sitename="ParallelPlots.jl",
     format=Documenter.HTML(;
         canonical="https://moritz155.github.io/ParallelPlots.jl",
-        edit_link="main",
+        edit_link="New",
         assets=String[],
     ),
     pages=[
@@ -23,5 +23,5 @@ makedocs(;
 
 deploydocs(;
     repo="github.com/moritz155/ParallelPlots.jl",
-    devbranch="main",
+    devbranch="New",
 )
