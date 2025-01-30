@@ -20,7 +20,7 @@ makedocs(
 )
 
 deploydocs(
-    repo = "https://github.com/marius-ui/ParallelPlots",
+    repo = "github.com/marius-ui/ParallelPlots",
     devbranch = "New",
     devurl = "dev",
     versions = ["stable" => "v^", "v#.#", "dev" => "dev"]
