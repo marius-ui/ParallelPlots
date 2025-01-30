@@ -10,11 +10,11 @@ makedocs(
     ),
     repo = "https://github.com/marius-ui/ParallelPlots",
     pages = [
-        "Home" => "index.md",
-        "Getting Started" => "getting_started.md",
-        "Usage" => "usage.md",
-        "Examples" => "examples.md",
-        "Development" => "development.md"
+        "Home" => "index.HTML",
+        "Getting Started" => "getting_started.HTML",
+        "Usage" => "usage.HTML",
+        "Examples" => "examples.HTML",
+        "Development" => "development.HTML"
     ]
 )
 
