@@ -4,7 +4,9 @@ theme:
   name: material  # You can change this theme
 nav:
   - Home: index.md
-  - About: about.md
-  - Installation: installation.md
+  - Getting Started: getting_started.md
   - Usage: usage.md
+  - Examples: examples.md
+  - Development: development.md
+  - README: README.md
 site_dir: site
