@@ -1,23 +1,11 @@
-using ParallelPlots
-using Documenter
+using Documenter, ParallelPlots
 
-DocMeta.setdocmeta!(ParallelPlots, :DocTestSetup, :(using ParallelPlots); recursive=true)
-
-makedocs(;
-    modules=[ParallelPlots],
-    authors="Moritz Schelten <moritz155@win.tu-berlin.de>",
-    sitename="ParallelPlots.jl",
-    format=Documenter.HTML(;
-        canonical="https://moritz155.github.io/ParallelPlots.jl",
-        edit_link="main",
-        assets=String[],
-    ),
-    pages=[
+makedocs(
+    sitename = "ParallelPlots",
+    format = Documenter.HTML(),
+    pages = [
         "Home" => "index.md",
+        "API Reference" => "api.md",
     ],
-)
-
-deploydocs(;
-    repo="github.com/moritz155/ParallelPlots.jl",
-    devbranch="main",
+    modules = [ParallelPlots],
 )
