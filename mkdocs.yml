@@ -1,0 +1,4 @@
+site_name: Dcumentation
+theme:
+  name: material
+site_dir: https://marius-ui.github.io/ParallelPlots/dev  # Set the output directory to dev
