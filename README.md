@@ -1,7 +1,7 @@
 # ParallelPlots
 
-[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://github.com/marius-ui/ParallelPlots/stable/)
-[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://github.com/marius-ui/ParallelPlots/dev/)
+[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://marius-ui.github.io/ParallelPlots/stable/)
+[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://marius-ui.github.io/ParallelPlots/dev/)
 [![Build Status](https://github.com/moritz155/ParallelPlots/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/moritz155/ParallelPlots/actions/workflows/CI.yml?query=branch%3Amain)
 [![Coverage](https://codecov.io/gh/moritz155/ParallelPlots/branch/main/graph/badge.svg)](https://codecov.io/gh/moritz155/ParallelPlots)
 
