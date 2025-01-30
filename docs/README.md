@@ -1,10 +1,13 @@
 # ParallelPlots
 
+[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://marius-ui.github.io/ParallelPlots/stable/)
+[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://marius-ui.github.io/ParallelPlots/dev/)
+[![Build Status](https://github.com/marius-ui/ParallelPlots/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/marius-ui/ParallelPlots/actions/workflows/CI.yml?query=branch%3Amain)
+[![Coverage](https://codecov.io/gh/marius-ui/ParallelPlots/branch/main/graph/badge.svg)](https://codecov.io/gh/marius-ui/ParallelPlots)
 
-[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](http://localhost:8000/stable/)
-[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](http://localhost:8000/)
-[![Build Status](https://github.com/moritz155/ParallelPlots/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/moritz155/ParallelPlots/actions/workflows/CI.yml?query=branch%3Amain)
-[![Coverage](https://codecov.io/gh/moritz155/ParallelPlots/branch/main/graph/badge.svg)](https://codecov.io/gh/moritz155/ParallelPlots)
+## Documentation
+- **Stable**: [https://marius-ui.github.io/ParallelPlots/stable/](https://marius-ui.github.io/ParallelPlots/stable/)
+- **Dev**: [https://marius-ui.github.io/ParallelPlots/dev/](https://marius-ui.github.io/ParallelPlots/dev/)
 
 ## General
 This Project is for the TU-Berlin Course "Julia Programming for Machine Learning"<br>

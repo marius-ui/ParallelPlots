@@ -19,7 +19,7 @@ makedocs(
 )
 
 deploydocs(
-    repo = "github.com/marius-ui/ParallelPlots.git",
-    branch = "New",
-    devbranch = "dev",
+    repo = "github.com/marius-ui/ParallelPlots.git",  # Your repository URL
+    devbranch = "main",  # The branch for "dev" documentation
+    push_preview = true,  # Optional: Push preview builds
 )
