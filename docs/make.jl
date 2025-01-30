@@ -21,6 +21,6 @@ makedocs(
 
 deploydocs(
     repo = "github.com/marius-ui/ParallelPlots.git",
-    branch = "gh-pages",
+    branch = "New",
     devbranch = "dev",
 )
