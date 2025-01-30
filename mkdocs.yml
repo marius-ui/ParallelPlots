@@ -8,4 +8,4 @@ nav:
   - Usage : usage.md ,
   - Examples  : examples.md ,
   - Development  : development.md 
-site_dir: ./dev
+site_dir: site
