@@ -5,11 +5,10 @@ DocMeta.setdocmeta!(ParallelPlots, :DocTestSetup, :(using ParallelPlots); recurs
 
 makedocs(
     sitename = "ParallelPlots",
-    format=Documenter.HTML(;
-        canonical="https://marius-ui.github.io/ParallelPlots.jl",
-        edit_link="",
-        assets=String[],
+    format=Documenter.HTML(
+        prettyurls = get(ENV, "CI", "false") == "true"
     ),
+    repo = "https://github.com/marius-ui/ParallelPlots",
     pages = [
         "Home" => "index.md",
         "Getting Started" => "getting_started.md",
