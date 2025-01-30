@@ -27,8 +27,8 @@ jobs:
         run: julia --project=docs docs/make.jl
 
       - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/main'  # Only deploy on the main branch
+        if: github.ref == 'refs/heads/master'  # Only deploy on the main branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/build
+          publish_dir: docs/build/html
