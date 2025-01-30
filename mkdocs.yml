@@ -3,7 +3,7 @@ site_url: https://marius-ui.github.io/ParallelPlots
 theme:
   name: material  # You can change this theme
 nav:
-  - Home : index.md
+  - Home : index.html
   - Getting Started : getting_started.md
   - Usage : usage.md ,
   - Examples  : examples.md ,
