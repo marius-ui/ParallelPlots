@@ -23,6 +23,4 @@ deploydocs(
     repo = "github.com/marius-ui/ParallelPlots",
     devbranch = "New",
     push_preview = true,
-    devurl = "dev",
-    versions = ["stable" => "v^", "v#.#", "dev" => "dev"]
 )
