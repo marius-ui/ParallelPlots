@@ -1,0 +1,4 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+ParallelPlots = "79f8b2c9-78a2-4289-b087-49f7cf65a4c9"
+LiveServer = "16fef848-9104-11e8-3586-7d2d1d8b7ef3"
